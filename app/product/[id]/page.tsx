@@ -15,7 +15,8 @@ function ProductImage({ product, fill }: Props) {
         <Image
           src={product.image}
           alt={product.title}
-          layout="fill"
+          width={150}
+          height={300}
           className={`object-contain duration-700 ease-in-out group-hover:opacity-75 ${
             loading
               ? "scale-110 blur-2xl grayscale"
