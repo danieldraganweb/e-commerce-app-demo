@@ -4,6 +4,7 @@ import ProductImage from "./ProductImage";
 type Props = {
   product: Product;
 };
+
 import React from "react";
 
 function Product({ product }: Props) {
