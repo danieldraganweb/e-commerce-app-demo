@@ -1,15 +1,24 @@
 import React from "react";
 
-function Footer() {
+const Footer = () => {
   return (
-    <div>
-      <footer>
-        <div className="max-w-6xl m-auto text-white-800 flex flex-wrap justify-center">
-          <p className="flex flex-wrap justify-center">&copy; 2023 SHOPPE</p>
-        </div>
-      </footer>
-    </div>
+    <footer className="max-w-6xl mx-auto py-4 bg-gray-100 text-white-800 flex flex-wrap justify-center">
+      <div className="flex flex-col">
+        <ul className="flex flex-wrap">
+          <li className="px-4 py-2 text-gray-500">
+            <a href="/about">About</a>
+          </li>
+          <li className="px-4 py-2 text-gray-500">
+            <a href="/blog">Blog</a>
+          </li>
+          <li className="px-4 py-2 text-gray-500">
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+        <p className="mb-4 mx-auto text-center  text-gray-500">© 2023 SHOPPE</p>
+      </div>
+    </footer>
   );
-}
+};
 
 export default Footer;
